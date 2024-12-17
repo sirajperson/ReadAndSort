@@ -1,3 +1,5 @@
+![rs](rs.jpg)
+
 # rs
 
 **rs** is a command-line utility that maps and displays a directory tree with syntax highlighting, file-type filtering, sorting, and optional content display. It’s designed to help developers explore project directories efficiently, especially when working with large codebases or language models.
