@@ -26,7 +26,7 @@
 
 ## Installation
 
-You’ll need [Rust](https://www.rust-lang.org/tools/install) installed. Then:
+To build you will nead you’ll need [Rust](https://www.rust-lang.org/tools/install) installed. Then:
 
 ```bash
 git clone https://github.com/yourusername/rs.git
@@ -43,34 +43,34 @@ rs [OPTIONS] [directory]
 
 If no directory is specified, it defaults to the current directory (.).
 
-Examples
+**Examples**
+
 List top-level entries in ./src:
 ```bash
 rs ./src
 ```
 
 Show Python files 3 levels deep and include file contents:
-
 ```bash
 rs -d 3 -t ext:py -c
 ```
-Show code files sorted by modification date:
 
+Show code files sorted by modification date:
 ```bash
 rs --sort date -t group:code
 ```
-Show files containing "TODO" and highlight matches:
 
+Show files containing "TODO" and highlight matches:
 ```bash
 rs -c -p "TODO" --highlight
 ```
-Filter by more than one type (Python files OR files in the web group):
 
+Filter by more than one type (Python files OR files in the web group):
 ```bash
 rs -t ext:py -t group:web ./src
-No depth limit (unlimited recursion):
 ```
 
+No depth limit (unlimited recursion):
 ```bash
 rs -d 0
 ```
