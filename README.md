@@ -32,51 +32,51 @@ You’ll need [Rust](https://www.rust-lang.org/tools/install) installed. Then:
 git clone https://github.com/yourusername/rs.git
 cd rs
 cargo build --release
-
+```
 
 The binary will be in target/release/rs. You can move it to a directory in your PATH for easy use:
 
-bash
-Copy code
+```bash
 mv target/release/rs /usr/local/bin/
-Usage
-bash
-Copy code
 rs [OPTIONS] [directory]
+```
+
 If no directory is specified, it defaults to the current directory (.).
 
 Examples
 List top-level entries in ./src:
-
-bash
-Copy code
+```bash
 rs ./src
+```
+
 Show Python files 3 levels deep and include file contents:
 
-bash
-Copy code
+```bash
 rs -d 3 -t ext:py -c
+```
 Show code files sorted by modification date:
 
-bash
-Copy code
+```bash
 rs --sort date -t group:code
+```
 Show files containing "TODO" and highlight matches:
 
-bash
-Copy code
+```bash
 rs -c -p "TODO" --highlight
+```
 Filter by more than one type (Python files OR files in the web group):
 
-bash
-Copy code
+```bash
 rs -t ext:py -t group:web ./src
 No depth limit (unlimited recursion):
+```
 
-bash
-Copy code
+```bash
 rs -d 0
-Options
+```
+
+**Options**
+
 -d, --depth N
 Maximum directory depth (default: 1, 0 = unlimited)
 
