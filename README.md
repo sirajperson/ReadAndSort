@@ -122,13 +122,13 @@ Don’t sort directories separately
 -h, --help
 Show help message
 
-Type Filters
+**Type Filters**
 File Types:
 
 ext:EXT — Show files with a specific extension (e.g., ext:py)
 group:GROUP — Show files from a specific group (e.g., group:web)
-Special Types:
 
+**Special Types:**
 binary — Show binary files
 text — Show text files
 dir — Show directories
@@ -143,6 +143,7 @@ archive — Show archive files
 Contributing
 Contributions are welcome! If you have ideas, bug reports, or feature requests, please open an issue or submit a pull request.
 
-License
-This project is distributed under the MIT License. See LICENSE for details.
+**License**
+This project is distributed under the MIT License. 
+See LICENSE for details.
 
